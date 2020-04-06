@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <title>Chat | Kakao Clone</title>
+  </head>
+  <body>
+    <!-- status bar -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__clock">13:53</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-ban"></i>
+        <span class="status-bar__battery-level">35%</span>
+        <i class="fas fa-battery-quarter"></i>
+      </div>
+    </div>
+
+    <!-- header -->
+    <header class="header">
+      <div class="header__header-column">
+          <a class="header__back-btn" href="javascript:javascript:history.go(-1)">
+                    <i class="fas fa-arrow-left"></i>
+          </a>          
+        <h1 class="header__title">Hunny</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+                <i class="fas fa-bars"></i>
+        </span>
+    </header>
+
+    <!-- main  -->
+    <main class="chat">
+        <ul class="chat__messages">
+            <span class="chat__timestamp">Friday, January 11, 2019</span>
+            <li class="incoming-message message">
+                <img src="images/avatar.png" class="g-avatar message-avater">
+                <div class="message__content">
+                    <span class="message__author">Hunny</span>
+                    <div class="message__bubble">
+                        Where are you?
+                    </div>
+                </div>
+                <span class="message__timestamp">12:35</span>
+            </li>
+            <li class="incoming-message message">
+                <span class="message__timestamp">12:36</span>
+                <div class="message__content">
+                    <div class="message__bubble">
+                        CUL8R
+                    </div>
+                </div>
+            </li>
+            <li class="incoming-message message">
+                <img src="images/avatar.png" class="g-avatar message-avater">
+                <div class="message__content">
+                    <span class="message__author">Hunny</span>
+                    <div class="message__bubble">
+                            Hunny Take care!!
+                    </div>
+                </div>
+                <span class="message__timestamp">12:37</span>
+            </li>
+        </ul>
+    </main>
+      
+<div class="chat__write">
+    <div class="chat__write-column">
+            <i class="far fa-plus-square"></i>
+    </div>
+    <div class="chat__write-column">
+        <input type="text" placeholder="Send message" class="chat__write-input">
+    </div>
+    <div class="chat__write-column">
+        <span class="chat__write-icon">
+                <i class="far fa-smile"></i>
+        </span>
+        <span class="chat__write-icon">
+                <i class="fas fa-microphone-alt"></i>
+        </span>
+    </div>
+</div>
+
+
+      <!-- navi -->
+    <!-- <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="friends.html" class="nav__list-link">
+            <i class="fas fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="index.html" class="nav__list-link">
+            <i class="fas fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="find.html" class="nav__list-link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav> -->
+  </body>
+</html>
