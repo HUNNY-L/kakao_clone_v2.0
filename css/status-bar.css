@@ -1,8 +1,7 @@
 .status-bar {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
-  opacity: 0.7;
+  color: #757575;
 }
 
 .status-bar i {
@@ -11,4 +10,14 @@
 
 .status-bar .status-bar__battery-level {
   margin-left: 3px;
+}
+
+.blink {
+  animation: blinkAnim 1.5s linear infinite;
+}
+
+@keyframes blinkAnim {
+  50% {
+    opacity: 0;
+  }
 }

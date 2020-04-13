@@ -23,9 +23,8 @@
         <i class="fas fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
         <i class="fas fa-wifi"></i>
-        <i class="fas fa-ban"></i>
-        <span class="status-bar__battery-level">35%</span>
-        <i class="fas fa-battery-quarter"></i>
+        <span class="status-bar__battery-level blink">15%</span>
+        <i class="fas fa-battery-quarter blink"></i>
       </div>
     </div>
 
@@ -52,10 +51,10 @@
       <header class="friends__header">
         <div class="friends__friend friend /">
           <div class="friend__column">
-            <img class="g-avatar friend__avatar" src="images/avatar.png" />
+            <img class="g-avatar friend__avatar" src="images/avatar_me.jpg" />
             <div class="friend__content">
               <span class="friend__name">
-                Hunny
+                Hun
               </span>
               <span class="friend__status">
                 now in Berlin
@@ -69,10 +68,12 @@
         <h5 class="friends__title">Plus Friend</h5>
         <div class="friends__friend friend">
           <div class="friend__column">
-            <img class="friend__avatar" src="images/avatar.png" />
+            <div class="plus--icon">
+              <i class="fas fa-box-open"></i>
+            </div>
             <div class="friend__content">
               <span class="friend__name">
-                Plus Friend
+                Gift Box
               </span>
             </div>
           </div>
@@ -81,7 +82,21 @@
 
       <!-- list of friends  -->
       <ul class="friends__list">
-        <h5 class="friends__title">Friends 14</h5>
+        <h5 class="friends__title">Friends 4</h5>
+        <li class="friends__friend friend">
+          <!-- friend info -->
+          <div class="friend__column">
+            <img class="friend__avatar" src="images/avatar1.JPG" />
+            <div class="friend__content">
+              <span class="friend__name">
+                Bobby
+              </span>
+              <span class="friend__status">
+                Date me please
+              </span>
+            </div>
+          </div>
+        </li>
         <li class="friends__friend friend">
           <!-- friend info -->
           <div class="friend__column">
@@ -91,15 +106,44 @@
                 Hunny
               </span>
               <span class="friend__status">
-                now in Berlin
+                Work hard anywhere!!
               </span>
             </div>
           </div>
           <!-- music now listening -->
           <div class="friend__column">
             <div class="friend__now-listening">
-              <span>Let's Hang Out (H Band)</span>
+              <span>Hang Out (H Band)</span>
               <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend">
+          <!-- friend info -->
+          <div class="friend__column">
+            <img class="friend__avatar" src="images/avatar2.JPG" />
+            <div class="friend__content">
+              <span class="friend__name">
+                Schmidt
+              </span>
+              <span class="friend__status">
+                #zuHauseBleiben
+              </span>
+            </div>
+          </div>
+        </li>
+
+        <li class="friends__friend friend">
+          <!-- friend info -->
+          <div class="friend__column">
+            <img class="friend__avatar" src="images/avatar3.JPG" />
+            <div class="friend__content">
+              <span class="friend__name">
+                Alisha
+              </span>
+              <span class="friend__status">
+                Day 45 in quarantine
+              </span>
             </div>
           </div>
         </li>
@@ -132,5 +176,6 @@
         </li>
       </ul>
     </nav>
+    <div class="bigScreen__text">Please make your screen small.</div>
   </body>
 </html>

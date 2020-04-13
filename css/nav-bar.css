@@ -12,8 +12,21 @@
   justify-content: space-between;
 }
 
+@keyframes navHoverAnim {
+  from {
+    transform: none;
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
+}
+
 .nav i {
   font-size: 20px;
+}
+
+.nav i:hover {
+  animation: navHoverAnim 0.5 ease-in-out forwards;
 }
 
 .nav .nav__list-link {
@@ -33,6 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 3;
 }
 
 .nav .nav__list-item {
@@ -41,4 +55,21 @@
 
 .nav .nav__list-item.selected {
   color: white;
+}
+
+@keyframes showNavBar {
+  from {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.nav {
+  transform: translateY(80px);
+  animation: showNavBar 0.5s ease-in-out forwards;
+  animation-delay: 0.2s;
 }
