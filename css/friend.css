@@ -71,10 +71,38 @@
   opacity: 0.7;
 }
 
+@keyframes playBtnAnim {
+  0% {
+    color: orange;
+    transform: none;
+  }
+  20% {
+    color: orangered;
+    transform: scale(1.1, 1.1);
+  }
+  40% {
+    color: olive;
+    transform: scale(1.2, 1.2);
+  }
+  60% {
+    color: olivedrab;
+    transform: scale(1.3, 1.3);
+  }
+  80% {
+    color: cornflowerblue;
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    color: lightskyblue;
+    transform: scale(1.1, 1.1);
+  }
+}
+
 .friend .friend__now-listening i {
-  color: #00be43;
+  /* color: #00be43; */
   padding-left: 3px;
   font-size: 10px;
+  animation: playBtnAnim 0.5s linear infinite;
 }
 
 .friend__add-btn {

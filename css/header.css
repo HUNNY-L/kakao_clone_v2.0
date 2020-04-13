@@ -25,3 +25,22 @@
   font-size: 20px;
   margin-right: 20px;
 }
+
+@keyframes cogTurnAnim {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotate(1turn);
+  }
+  100% {
+    transform: rotate(2turn);
+  }
+}
+
+.header__icon .fa-cog {
+  animation: cogTurnAnim 8s linear infinite;
+}
+.header__icon .fa-cog:hover {
+  animation: cogTurnAnim 2s linear infinite;
+}
