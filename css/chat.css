@@ -207,6 +207,7 @@
   border-radius: 30px;
   font-size: 14px;
   font-weight: 400;
+  line-height: 1.5;
 }
 
 @keyframes incomingAnimation {
